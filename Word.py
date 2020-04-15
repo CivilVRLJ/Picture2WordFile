@@ -3,7 +3,15 @@ from docx.shared import Cm
 import os
 import numpy as np
 
-title = "Erosion vs Height"
+import sys
+
+if len(sys.argv) != 2:
+    print("Please use python3.7 Word.py \"yourgrahpname\"")
+    sys.exit()
+
+print("len(sys.argv): " + str(len(sys.argv)))
+
+title = sys.argv[1]
 
 document = Document()
 document.add_heading(str(title), 0)
@@ -25,6 +33,9 @@ for area in areaList:
     for file in listFiles:
         print("file: " + str(file))
         listImage.append(file)
+
+    if ".DS_Store" in listImage:
+        listImage.remove(".DS_Store")
 
     document.add_heading(area, level=1)
     for pngName in listImage:
