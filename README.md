@@ -17,17 +17,20 @@ Stap 3. Open de map van het programma in "windows commend line"<br>
 
 ** De volgende stappen gaan via de windows commend line ***
 
-Stap 4. Install pip (https://pip.pypa.io/en/stable/installing/) <br>
+Stap 4. Install pip  <br>
+```shell script
+python.exe -m pip install -U pip
+```
 Stap 5. Install docx en numpy
 ```shell script
-pip install python-docx
-pip install numpy
+python.exe -m pip install python-docx
+python.exe -m pip install numpy
 ```
-stap 6. Laat het programma draaien
+stap 6. Zet de volgende tekst in de windows commend line: 
 ```shell script
 python3.7 Word.py "Folder Name"
 ```
-
+De "folder Name" is de naam van de folder waar de plaatjes in staan
 
 
 
