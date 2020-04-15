@@ -6,7 +6,7 @@ import numpy as np
 import sys
 
 if len(sys.argv) != 2:
-    print("Please use python3.7 Word.py \"yourgrahpname\"")
+    print("Please use python3.7 Word.py \"Folder Name\"")
     sys.exit()
 
 print("len(sys.argv): " + str(len(sys.argv)))
